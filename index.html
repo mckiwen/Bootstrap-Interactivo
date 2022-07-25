@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portada</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+<body>
+  <!-- Header -->
+  <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-xl">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./img/pdc-logo.png" alt="Canary Islands logo" width="20" height="30"
+            class="d-inline-block align-text-top">
+          Canarias
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Portada</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./actividades.html">Actividades</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Islas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <h6 class="dropdown-header" href="#">Santa Cruz de Tenerife</h6>
+                </li>
+                <li><a class="dropdown-item" href="#">Tenerife</a></li>
+                <li><a class="dropdown-item" href="#">La Gomera</a></li>
+                <li><a class="dropdown-item" href="#">La Palma</a></li>
+                <li><a class="dropdown-item" href="#">El Hierro</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <h6 class="dropdown-header" href="#">Las Palmas</h6>
+                </li>
+                <li><a class="dropdown-item" href="#">Gran Canaria</a></li>
+                <li><a class="dropdown-item" href="#">Fuerteventura</a></li>
+                <li><a class="dropdown-item" href="#">Lanzarote</a></li>
+                <li><a class="dropdown-item" href="#">La Graciosa</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Contáctanos</a>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Contacta con nosotros</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group mt-2">
+                          <label for="inputAsunto">
+                            <h5>Asunto</h5>
+                          </label>
+                          <input type="text" class="form-control" id="inputAsunto">
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="inputMensaje">
+                            <h5>Mensaje</h5>
+                          </label>
+                          <textarea class="form-control" id="inputMensaje" rows="6"></textarea>
+                        </div>
+                        <div class="row mt-2">
+                          <div class="col-sm-12 col-lg">
+                            <label for="inputNombre">
+                              <h5>Nombre</h5>
+                            </label>
+                            <input type="text" class="form-control" id="inputNombre">
+                          </div>
+                          <div class="col-sm-12 col-lg">
+                            <label for="inputEmail">
+                              <h5>Email</h5>
+                            </label>
+                            <input type="text" class="form-control" id="inputEmail">
+                          </div>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            <h5>Aceptar términos de uso</h5>
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item p-2" tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" title="Advertencia"
+              data-bs-content="Este elemento es un popover y muestra información adicional">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-exclamation-triangle-fill text-warning" viewBox="0 0 16 16">
+                <path
+                  d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg>
+            </li>
+            <li class="nav-item p-2" id="liveToastBtn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-exclamation-circle-fill text-danger" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+              </svg>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Introduzca un término" aria-label="Search"
+              data-bs-toggle="tooltip" data-bs-placement="bottom" title="Realizar una búsqueda dentro de la web">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Toast -->
+  <div class="position-fixed top-0 start-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast bg-info" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="2000">
+      <div class="toast-header">
+        <strong class="me-auto">Notification</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body text-light">
+        Este elemento es un toast, y se usa para mostrar notificaciones al usuario.
+      </div>
+    </div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="row bg-light">
+    <nav aria-label="breadcrumb">
+      <div class="container-xl">
+        <ol class="breadcrumb mt-3">
+          <li class="breadcrumb-item active" aria-current="page">Portada</li>
+        </ol>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="container-xl">
+    <!-- Main -->
+    <div class="row mt-3">
+      <div class="col-lg-2">
+        <ul class="nav flex-lg-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#galeria">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#poblacion">Población</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gastronomia">Gastronomía</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-10">
+        <!-- Carousel -->
+        <div class="container-fluid mb-5 p-0 d-none d-lg-block" id="galeria">
+          <div id="carouselExampleCaptions"  class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/la-palma-carousel.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>La Palma</h5>
+                  <p>Impresionantes balcones colgantes</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/lanzarote-carousel.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Lanzarote</h5>
+                  <p>La exótica playa Papagayo</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/tenerife-carousel.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Tenerife</h5>
+                  <p>La maravillosa playa de las Teresitas</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="container-fluid p-0">
+          <div class="row mb-5" id="poblacion">
+            <h3>Población por provincias</h3>
+
+            <!-- NavPills-->
+            <ul class="nav nav-pills mb-3 mt-3" id="pills-tab" role="tablist">
+              <li class="col nav-item" role="presentation">
+                <button class="col-12 nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                  aria-selected="true">Santa Cruz de Tenerife</button>
+              </li>
+              <li class="col nav-item" role="presentation">
+                <button class="col-12 nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                  aria-selected="false">Las Palmas</button>
+              </li>
+            </ul>
+            <div class="tab-content p-0" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="col-12 mb-2">
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between">Tenerife<span
+                        class="badge bg-primary">966.354</span></li>
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between">La Gomera<span
+                        class="badge bg-primary">22.426</span></li>
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between">El Hierro<span
+                        class="badge bg-primary">11.338</span></li>
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between">La Palma<span
+                        class="badge bg-primary">85.840</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="col-12">
+                  <div class="btn-toolbar mb-5" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group-vertical me-2 w-100" role="group" aria-label="First group">
+                      <button type="button"
+                        class="btn btn-outline-secondary d-flex justify-content-between align-items-center">
+                        <h4>Gran Canaria</h4><span class="badge rounded-pill bg-info">870.595</span>
+                      </button>
+                      <button type="button"
+                        class="btn btn-outline-secondary d-flex justify-content-between align-items-center">
+                        <h4>Lanzarote</h4><span class="badge rounded-pill bg-info">154.530</span>
+                      </button>
+                      <button type="button"
+                        class="btn btn-outline-secondary d-flex justify-content-between align-items-center">
+                        <h4>Fuerteventura</h4><span class="badge rounded-pill bg-info">126.227</span>
+                      </button>
+                      <button type="button"
+                        class="btn btn-outline-secondary d-flex justify-content-between align-items-center">
+                        <h4>La Graciosa</h4><span class="badge rounded-pill bg-info">734</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-5" id="gastronomia">
+            <h3>Gastronomía</h3>
+            <!-- Accordion -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Menú
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row  mb-3" id="menu">
+                      <div class="col-sm-6 col-md-4">
+                        <h5>Primeros</h5>
+                        <ul class="list-group">
+                          <li class="list-group-item list-group-item-action">Ensalada Tropical</li>
+                          <li class="list-group-item list-group-item-action">Escaldón</li>
+                          <li class="list-group-item list-group-item-action">Queso Asado</li>
+                          <li class="list-group-item list-group-item-action ">Croquetas</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                        <h5>Segundos</h5>
+                        <ul class="list-group">
+                          <li class="list-group-item list-group-item-action list-group-item-primary">Carne Fiesta</li>
+                          <li class="list-group-item list-group-item-action list-group-item-primary">Pollo Asado</li>
+                          <li class="list-group-item list-group-item-action list-group-item-primary">Garbanzas</li>
+                          <li class="list-group-item list-group-item-action list-group-item-primary">Potaje Berros</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <h5>Postres</h5>
+                        <ul class="list-group">
+                          <li class="list-group-item list-group-item-action list-group-item-warning">Polvito Uruguayo
+                          </li>
+                          <li class="list-group-item list-group-item-action list-group-item-warning">Principe Alberto
+                          </li>
+                          <li class="list-group-item list-group-item-action list-group-item-warning">Frangoyo</li>
+                          <li class="list-group-item list-group-item-action list-group-item-warning">Quesillo</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Precios
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row  mb-3" id="precios">
+                      <h4>Precios</h4>
+                      <div class="col-12">
+                        <table class="table">
+                          <thead>
+                            <tr class="table-dark">
+                              <th scope="col">#</th>
+                              <th scope="col">Primeros</th>
+                              <th scope="col">Ingredientes</th>
+                              <th scope="col">Precio</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="table-light">
+                              <th scope="row">1</th>
+                              <td>Ensalada Tropical</td>
+                              <td>Lechuga, mango y papaya</td>
+                              <td>7€</td>
+                            </tr>
+                            <tr class="table-light">
+                              <th scope="row">2</th>
+                              <td>Escaldón</td>
+                              <td>Gofio</td>
+                              <td>4€</td>
+                            </tr>
+                            <tr class="table-light">
+                              <th scope="row">3</th>
+                              <td>Queso Asado</td>
+                              <td>Leche de Cabra</td>
+                              <td>5€</td>
+                            </tr>
+                            <tr class="table-light">
+                              <th scope="row">4</th>
+                              <td>Croquetas</td>
+                              <td>Pollo, cherne, queso azul</td>
+                              <td>6€</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-12">
+                        <table class="table table-primary table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Segundos</th>
+                              <th scope="col">Ingredientes</th>
+                              <th scope="col">Precio</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Carne Fiesta</td>
+                              <td>Cochino negro</td>
+                              <td class="text-center">7.5€</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Pollo Asado</td>
+                              <td>Pollo de corral</td>
+                              <td class="text-center">5.5€</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Garbanzas</td>
+                              <td>Garbanzos, carne de cochino</td>
+                              <td class="text-center">4€</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Potaje de Berros</td>
+                              <td>Berros, papas, bubango</td>
+                              <td class="text-center">5€</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-12">
+                        <table class="table table-warning table-striped table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Postres</th>
+                              <th scope="col">Ingredientes</th>
+                              <th scope="col">Precio</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Polvito Uruguayo</td>
+                              <td>Dulce de leche</td>
+                              <td>3.5€</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Principe Alberto</td>
+                              <td>Huevo, Leche y Almendras</td>
+                              <td>3€</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Frangoyo</td>
+                              <td>Huevos, Leche y Caramelo</td>
+                              <td>2.75€</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Quesillo</td>
+                              <td>Leche, Huevos y Azúcar</td>
+                              <td>3€</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

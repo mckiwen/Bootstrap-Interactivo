@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+<body>
+    <!-- Header -->
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-xl">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/pdc-logo.png" alt="Canary Islands logo" width="20" height="30"
+                        class="d-inline-block align-text-top">
+                    Canarias
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Portada</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Islas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <h6 class="dropdown-header" href="#">Santa Cruz de Tenerife</h6>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Tenerife</a></li>
+                                <li><a class="dropdown-item" href="#">La Gomera</a></li>
+                                <li><a class="dropdown-item" href="#">La Palma</a></li>
+                                <li><a class="dropdown-item" href="#">El Hierro</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <h6 class="dropdown-header" href="#">Las Palmas</h6>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Gran Canaria</a></li>
+                                <li><a class="dropdown-item" href="#">Fuerteventura</a></li>
+                                <li><a class="dropdown-item" href="#">Lanzarote</a></li>
+                                <li><a class="dropdown-item" href="#">La Graciosa</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Contáctanos</a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Contacta con nosotros</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group mt-2">
+                                                    <label for="inputAsunto">
+                                                        <h5>Asunto</h5>
+                                                    </label>
+                                                    <input type="text" class="form-control" id="inputAsunto">
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <label for="inputMensaje">
+                                                        <h5>Mensaje</h5>
+                                                    </label>
+                                                    <textarea class="form-control" id="inputMensaje"
+                                                        rows="6"></textarea>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col-sm-12 col-lg">
+                                                        <label for="inputNombre">
+                                                            <h5>Nombre</h5>
+                                                        </label>
+                                                        <input type="text" class="form-control" id="inputNombre">
+                                                    </div>
+                                                    <div class="col-sm-12 col-lg">
+                                                        <label for="inputEmail">
+                                                            <h5>Email</h5>
+                                                        </label>
+                                                        <input type="text" class="form-control" id="inputEmail">
+                                                    </div>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        <h5>Aceptar términos de uso</h5>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cancelar</button>
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-dismiss="modal">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item p-2" tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus"
+                            title="Advertencia"
+                            data-bs-content="Este elemento es un popover y muestra información adicional">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-exclamation-triangle-fill text-warning" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg>
+                        </li>
+                        <li class="nav-item p-2" id="liveToastBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-exclamation-circle-fill text-danger" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                            </svg>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Introduzca un término"
+                            aria-label="Search" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="Realizar una búsqueda dentro de la web">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Toast -->
+    <div class="position-fixed top-0 start-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast bg-info" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Notification</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body text-light">
+                Este elemento es un toast, y se usa para mostrar notificaciones al usuario.
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb -->
+
+    <div class="row bg-light">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <div class="container-xl">
+                <ol class="breadcrumb mt-3">
+                    <li class="breadcrumb-item"><a href="./index.html">Portada</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Actividades</li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container-xl">
+        <!-- Main -->
+        <div class="row mt-5">
+            <nav class="p-0">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Rutas</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Deportes</button>
+                </div>
+            </nav>
+            <div class="tab-content border border-1 border-top-0" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="row" data-masonry='{"percentPosition": true }'>
+
+                        <!-- Ruta Marcos y Cordero -->
+                        <div class="col-sm-6 col-lg-4 mt-3 mb-4">
+                            <div class="card border-success g-0">
+                                <div class="card-header bg-danger">
+                                    <h2 class="text-light">Destacado</h2>
+                                </div>
+                                <img src="./img/rutas-marcos-cordero.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ruta de Marcos y Cordero</h5>
+                                    <p class="card-text">Situada en la isla de La Palma, se considera una de las rutas
+                                        indispensables, no solo de esta isla, sino de toda Canarias.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Frase Celebre -->
+                        <div class="col-sm-6 col-lg-4 mt-3 mb-4">
+                            <div class="card text-white bg-success g-0">
+                                <div class="card-header">Frase Célebre</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">El Arte</h5>
+                                    <blockquote class="blockquote mb-0">
+                                        <p>"El arte es algo mucho más importante, mucho más profundo, para no caer en la
+                                            elemental y pobre vulgaridad de la ordinariez
+                                            humana cada vez más acentuada, cuando no se ha planificado inteligentemente
+                                            un despliegue de la llamada educación cívica y cultural."</p>
+                                        <footer class="blockquote-footer text-white">César Manrique en <cite
+                                                title="Source Title">Memorias y Obras</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Barranco de las Vacas -->
+                        <div class="col-sm-6 col-lg-4 mt-3 mb-4">
+                            <div class="card border-primary g-0">
+                                <img src="./img/rutas-barranco-las-vacas.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Barranco de las Vacas</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Gran Canaria</h6>
+                                    <p class="card-text">Estas llamativas formaciones tienen cierto parecido al famoso
+                                        Antelope Canyon de Estados Unidos. ¿Por qué? Por sus peculiares formaciones
+                                        rocosas llamadas Tobas de Colores.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Refranero popular -->
+                        <div class="col-sm-6 col-lg-4 mt-3 mb-4">
+                            <div class="card text-white bg-primary g-0 text-center">
+                                <div class="card-body">
+                                    <p class="card-text">El agua se espera en la tierra y la guagua en la carretera.</p>
+                                    <footer class="blockquote-footer text-white mb-0">Refranero popular</footer>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Mil Ventanas -->
+                        <div class="col-sm-6 col-lg-4 mt-3 mb-4">
+                            <div class="card g-0 border-info text-center text-light">
+                                <div class="card">
+                                    <div class="card-body bg-info">
+                                        <h5 class="card-title">Mil Ventanas</h5>
+                                        <p class="card-text">Ruta situada en el municipio de Güimar no apta para
+                                            aquellas personas que sufren miedo a las alturas</p>
+                                        <p class="card-text"><small>Foto cedida por un fotógrafo</small></p>
+                                    </div>
+                                    <img src="./img/rutas-mil-ventanas.jpg" class="card-img-bottom" alt="...">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Acension al Teide -->
+                        <div class="col-sm-6 col-lg-4 mt-3 mb-4">
+                            <div class="card g-0">
+                                <img src="./img/rutas-teide.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><small class="text-muted">Ascensión al Teide</small></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Ruta de los Volcanes -->
+                        <div class="col-sm-6 col-lg-4 mt-3 mb-4">
+                            <div class="card bg-dark text-white g-0 ">
+                                <img src="./img/rutas-volcanes.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-center bg-light text-dark">Ruta de Los Volcanes</h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Frase Motivadora -->
+                        <div class="col-sm-6 col-lg-4 mt-3 mb-4">
+                            <div class="card text-dark bg-warning g-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">El viaje de mil millas comienza con un solo paso.</h5>
+                                    <p class="card-text"></p>
+                                    <footer class="blockquote-footer text-secondary mb-0">Frase motivadora</footer>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Barranco de Afur -->
+                        <div class="col-sm-6 col-lg-4 mt-3 mb-4">
+                            <div class="card border-info text-info g-0">
+                                <div class="card-header bg-transparent border-info">
+                                    <h5>Tenerife</h5>
+                                </div>
+                                <img src="./img/rutas-afur.jpg" class="card-img-top" alt="...">
+                                <div class="card-footer bg-transparent border-info">
+                                    <h5>Barranco de Afur</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="row m-3">
+                        <div class="col-12 col-md-6 col-lg-4 g-0 mb-2">
+                            <div class="card w-100 h-100" style="width: 18rem;">
+                                <img src="./img/buceo.jpg" class="card-img-top"
+                                    alt="Imagen de buceador en el fondo del mar">
+                                <div class="card-body">
+                                    <h5 class="card-title">Buceo</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional
+                                        content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer text-muted">Last updated 3 mins ago</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 g-0 mb-2">
+                            <div class="card w-100 h-100" style="width: 18rem;">
+                                <img src="./img/parapente.jpg" class="card-img-top"
+                                    alt="Imagen de buceador en el fondo del mar">
+                                <div class="card-body">
+                                    <h5 class="card-title">Parapente</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="card-footer text-muted text-center">Last updated 3 mins ago</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 g-0 mb-2">
+                            <div class="card w-100 h-100" style="width: 18rem;">
+                                <img src="./img/surf.jpg" class="card-img-top"
+                                    alt="Imagen de buceador en el fondo del mar">
+                                <div class="card-body">
+                                    <h5 class="card-title">Surf</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional
+                                        content. This card has even longer content than the first show that equal height
+                                        action.</p>
+                                </div>
+                                <div class="card-footer text-muted text-end">Last updated 3 mins ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
